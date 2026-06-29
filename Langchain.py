@@ -3,7 +3,6 @@
 
 # Langchain - Framework to build LLM based applications - Parts: Models, Prompts, Chains, Memory, Indexes, Agents
 # Retrieval-Augmented-Generation(RAG) - We provide our private documentation so it can answer questions from that document
-# AI Agents - Chatbots on Steroids can do any work
 # Need of Langchain Flowchart - Vectorization of users query -> Sematic search(Understanding query) inside database -> Inside the pages of database information feed to brain along with query to generate output
 
 # Models - Interface between user and AI : Language model (LLMs) - Text-to-Text, Embedding model - Text-to-vector
@@ -26,9 +25,12 @@ response = llm.invoke("Explain Retrieval-Augmented Generation in simple terms.")
 
 print(response) 
 
-# Prompts - Input to AI : Static and Dynamic Prompts
-# Chains - sequence of components connected together, where the output of one component becomes the input of the next, each block performs a specific task
-
+# Prompts - Input to AI : Static and Dynamic(Re-usable) Prompts
+# Chains/Pipeline - sequence of components connected together, where the output of one component becomes the input of the next, each block performs a specific task
+# Indexes - Connects application to external knowledge
+# Memory - Stores Chat History : ConversationBufferMemory(Short history), ConversationBufferWindowMemory(last n chats), Summarizer-Based Memory(Big history summarized in small), Custom Memory(For advanced cases)
+# AI Agents - Chatbots on steroids
+# Models - 
 
 
 
